@@ -10,14 +10,13 @@ namespace ProblemThree_CompleteSolution_BL
     {
         double TotalBillValue { get; set; }
 
-        public GourmetCoffeeShop(int iCode, string iName, Dictionary<int, double> iPrice)
+        public GourmetCoffeeShop(int iCode, string iName, Dictionary<int, double> iPrice) : base(iCode, iName)
         {
 
         }
 
         public override double PayPerPiece(int quantity)
         {
-            // This method
             return 0.0;
         }
 

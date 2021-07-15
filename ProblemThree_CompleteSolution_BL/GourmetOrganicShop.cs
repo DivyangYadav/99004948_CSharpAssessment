@@ -10,10 +10,9 @@ namespace ProblemThree_CompleteSolution_BL
     {
         public double TaxBillValue { get; set; }
 
-
-        public GourmetOrganicShop(int iCode, string iName, Dictionary<int, double> iPrice)
+        public GourmetOrganicShop(int iCode, string iName, Dictionary<int, double> iPrice) : base(iCode, iName)
         {
-
+            
         }
 
         public override double PayPerPiece(int quantity)
