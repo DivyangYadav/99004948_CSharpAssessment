@@ -6,8 +6,29 @@ using System.Threading.Tasks;
 
 namespace ProblemThree_CompleteSolution_BL
 {
-    public class GourmetOrganicShop : GourmetShop,ITaxCompute
+    public class GourmetOrganicShop : GourmetShop , ITaxCompute
     {
-        
+        public double TaxBillValue { get; set; }
+
+
+        public GourmetOrganicShop(int iCode, string iName, Dictionary<int, double> iPrice)
+        {
+
+        }
+
+        public override double PayPerPiece(int quantity)
+        {
+            return 0.0;
+        }
+
+        public override double PayPerWeight(int weight)
+        {
+            return 0.0;
+        }
+
+        public double TaxOnTotalBill()
+        {
+            throw new NotImplementedException();
+        }
     }
 }
